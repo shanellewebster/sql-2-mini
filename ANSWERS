@@ -1,1 +1,18 @@
+/* create table Movie (
+  ID integer primary key,
+  title text,
+  MediaTypeId integer,
+  foreign key(MediaTypeId) references MediaType(MediaTypeId)
+); */
 
+/* insert into Movie (Title, MediaTypeId) values ("Aladdin",3); */
+
+/* select * from Movie; */
+
+/* ALTER TABLE Movie ADD COLUMN GenreId INTEGER REFERENCES Genre(GenreId); */
+
+/* select * from Movie; */
+
+ALTER TABLE Movie ADD COLUMN GenreId INTEGER REFERENCES Genre(GenreId);
+
+// NOT FINISHED YET
